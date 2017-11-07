@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b3N-JE-EKR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feed-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController title="Feed" id="9pv-A4-QxB" customClass="ImageFeedController" customModule="instame" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FWe-K3-IPf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="ic_portrait" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Geo-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController title="Geo" id="8rJ-Kc-sve" customClass="GeoImageController" customModule="instame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Geo Images" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="95.5" y="312" width="184.5" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_place" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tags-->
+        <scene sceneID="P97-wt-TW6">
+            <objects>
+                <viewController title="Tags" id="Axh-CM-s63" customClass="TagSearchController" customModule="instame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jyg-Rc-Zul">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Tag Search" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="V9x-1p-9EF">
+                                <rect key="frame" x="102.5" y="312" width="171" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V9x-1p-9EF" firstAttribute="centerY" secondItem="jyg-Rc-Zul" secondAttribute="centerY" id="ljE-9Z-KeC"/>
+                            <constraint firstItem="V9x-1p-9EF" firstAttribute="centerX" secondItem="jyg-Rc-Zul" secondAttribute="centerX" id="tim-4z-Fv7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nBK-wA-bSS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_search" id="cOk-IG-x8t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Rz-z4-dEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="1022"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Jg-zd-IaR">
+            <objects>
+                <navigationController hidesBarsOnSwipe="YES" id="b3N-JE-EKR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8fw-QU-BiD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="28"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mVj-zD-PNW" kind="relationship" relationship="rootViewController" id="Rk8-xc-L7T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwI-2C-7kz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2258" y="-44"/>
+        </scene>
+        <!--Login Controller-->
+        <scene sceneID="Fqw-pk-JHW">
+            <objects>
+                <viewController id="mVj-zD-PNW" userLabel="Login Controller" customClass="LoginController" customModule="instame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zKx-6a-VIu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" customUserAgent="" translatesAutoresizingMaskIntoConstraints="NO" id="qKK-mK-vPb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qKK-mK-vPb" firstAttribute="leading" secondItem="zKx-6a-VIu" secondAttribute="leading" id="DGB-Rk-h2h"/>
+                            <constraint firstItem="qKK-mK-vPb" firstAttribute="bottom" secondItem="NZ5-ex-qFg" secondAttribute="bottom" id="Uw2-2T-ydZ"/>
+                            <constraint firstItem="qKK-mK-vPb" firstAttribute="top" secondItem="zKx-6a-VIu" secondAttribute="top" id="m49-o6-PVq"/>
+                            <constraint firstAttribute="trailing" secondItem="qKK-mK-vPb" secondAttribute="trailing" id="ryG-rE-iQx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NZ5-ex-qFg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="InstaMe" prompt=" " id="bs5-bQ-ax1">
+                        <barButtonItem key="backBarButtonItem" title="Logout" id="BIk-mj-PO4">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" id="k1x-uM-NG1"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="qKK-mK-vPb" id="lD6-y8-Mrf"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="PushTabController" id="rHa-le-QNT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ga-Uj-cAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1340" y="-43"/>
+        </scene>
+        <!--InstaMe-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBar" title="InstaMe" useStoryboardIdentifierAsRestorationIdentifier="YES" id="49e-Tb-3d3" customClass="MainTabBarController" customModule="instame" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="Axh-CM-s63" kind="relationship" relationship="viewControllers" id="2dM-13-hbS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-318" y="-43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_place" width="24" height="24"/>
+        <image name="ic_portrait" width="24" height="24"/>
+        <image name="ic_search" width="24" height="24"/>
+    </resources>
+</document>
