@@ -34,7 +34,7 @@ class ImageFeedCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        self.initialBearFrame = self.bear.frame
+        self.initialBearFrame = self.bear.bounds
         self.hiddenBearFrame = CGRect(x:0, y:-self.bear.frame.size.height, width : self.bear.frame.size.width, height : self.bear.frame.size.height )
     }
 

@@ -81,10 +81,10 @@ class ImageFeedController : UITableViewController {
                         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
                             
                             if feedImage.liked {
-                                cell.bear.frame = cell.initialBearFrame!
+                                cell.bear.bounds = cell.initialBearFrame!
                                 cell.bear.alpha = feedImage.liked ? 1 : 0
                             } else {
-                                cell.bear.frame = cell.hiddenBearFrame!
+                                cell.bear.bounds = cell.hiddenBearFrame!
                                 cell.bear.alpha = feedImage.liked ? 1 : 0
                             }
                             
