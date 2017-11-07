@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D9C33FB1FB1D26100F15B90 /* InstaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33F01FB1D09600F15B90 /* InstaApi.swift */; };
+		7D9C33FC1FB1D26100F15B90 /* InstaApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33F11FB1D09600F15B90 /* InstaApiEndpoints.swift */; };
+		7D9C33FD1FB1D26100F15B90 /* InstaApiUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33F21FB1D09600F15B90 /* InstaApiUrls.swift */; };
+		7D9C33FE1FB1D26100F15B90 /* InstaFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33F31FB1D09600F15B90 /* InstaFetch.swift */; };
+		7D9C33FF1FB1D26700F15B90 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33F91FB1D09600F15B90 /* StringExtensions.swift */; };
+		7D9C34001FB1D26700F15B90 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33FA1FB1D09600F15B90 /* UIViewExtensions.swift */; };
+		7D9C34011FB1D26F00F15B90 /* FeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33EC1FB1D09600F15B90 /* FeedImage.swift */; };
+		7D9C34021FB1D26F00F15B90 /* ImageFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33ED1FB1D09600F15B90 /* ImageFeedCell.swift */; };
+		7D9C34031FB1D27D00F15B90 /* ImageFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D9C33EE1FB1D09600F15B90 /* ImageFeedCell.xib */; };
+		7D9C34041FB1D28A00F15B90 /* Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33F51FB1D09600F15B90 /* Relationships.swift */; };
+		7D9C34051FB1D28A00F15B90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33F61FB1D09600F15B90 /* User.swift */; };
+		7D9C34061FB1D28A00F15B90 /* UserCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33F71FB1D09600F15B90 /* UserCounts.swift */; };
+		7D9C34071FB1D29100F15B90 /* GeoImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33E61FB1D09500F15B90 /* GeoImageController.swift */; };
+		7D9C34081FB1D29100F15B90 /* ImageFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33E71FB1D09500F15B90 /* ImageFeedController.swift */; };
+		7D9C34091FB1D29100F15B90 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33E81FB1D09500F15B90 /* LoginController.swift */; };
+		7D9C340A1FB1D29100F15B90 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33E91FB1D09500F15B90 /* MainTabBarController.swift */; };
+		7D9C340B1FB1D29100F15B90 /* TagSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C33EA1FB1D09500F15B90 /* TagSearchController.swift */; };
 		7DDFB3461FAFDB42005E5864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDFB3451FAFDB42005E5864 /* AppDelegate.swift */; };
 		7DDFB34D1FAFDB42005E5864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DDFB34B1FAFDB42005E5864 /* Main.storyboard */; };
 		7DDFB34F1FAFDB42005E5864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DDFB34E1FAFDB42005E5864 /* Assets.xcassets */; };
@@ -309,6 +326,7 @@
 				7DDFB3521FAFDB42005E5864 /* LaunchScreen.storyboard in Resources */,
 				7DDFB34F1FAFDB42005E5864 /* Assets.xcassets in Resources */,
 				7DDFB34D1FAFDB42005E5864 /* Main.storyboard in Resources */,
+				7D9C34031FB1D27D00F15B90 /* ImageFeedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +338,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DDFB3461FAFDB42005E5864 /* AppDelegate.swift in Sources */,
+				7D9C33FB1FB1D26100F15B90 /* InstaApi.swift in Sources */,
+				7D9C33FC1FB1D26100F15B90 /* InstaApiEndpoints.swift in Sources */,
+				7D9C33FD1FB1D26100F15B90 /* InstaApiUrls.swift in Sources */,
+				7D9C33FF1FB1D26700F15B90 /* StringExtensions.swift in Sources */,
+				7D9C34001FB1D26700F15B90 /* UIViewExtensions.swift in Sources */,
+				7D9C34011FB1D26F00F15B90 /* FeedImage.swift in Sources */,
+				7D9C34021FB1D26F00F15B90 /* ImageFeedCell.swift in Sources */,
+				7D9C33FE1FB1D26100F15B90 /* InstaFetch.swift in Sources */,
+				7D9C34041FB1D28A00F15B90 /* Relationships.swift in Sources */,
+				7D9C34051FB1D28A00F15B90 /* User.swift in Sources */,
+				7D9C34061FB1D28A00F15B90 /* UserCounts.swift in Sources */,
+				7D9C34071FB1D29100F15B90 /* GeoImageController.swift in Sources */,
+				7D9C34081FB1D29100F15B90 /* ImageFeedController.swift in Sources */,
+				7D9C34091FB1D29100F15B90 /* LoginController.swift in Sources */,
+				7D9C340A1FB1D29100F15B90 /* MainTabBarController.swift in Sources */,
+				7D9C340B1FB1D29100F15B90 /* TagSearchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

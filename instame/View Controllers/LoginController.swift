@@ -46,11 +46,16 @@ class LoginController: UIViewController, WKNavigationDelegate {
         
         if self.access_token != nil {
             
+            // Reset access token
+            self.access_token = nil
+            InstaApi.shared.access_token = nil
+            
             // Force a logout by url
             let url = URL(string:self.logoutUrl)
             let req = URLRequest(url: url!)
             
             webView.navigationDelegate = self
+            webView.frame = CGRect(x: 0, y: 0, width: webView.frame.size.width, height: webView.frame.size.height)
             webView.load(req)
         }
     }
@@ -60,7 +65,18 @@ class LoginController: UIViewController, WKNavigationDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        
+        // Ensure we can log back in again using our pattern
+        if webView.url?.path == "/" {
+            
+            let url = URL(string:instagramAuth)
+            let req = URLRequest(url: url!)
+            
+            webView.navigationDelegate = self
+            webView.load(req)
+        }
+    }
     
     func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
         
